@@ -54,6 +54,72 @@
     </div>
     <hr>
 
+        <!-- TÍNH THUẾ THU NHẬP CÁ NHÂN -->
+
+        <div class="container">
+            <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h1 class="text-center">TÍNH THUẾ THU NHẬP CÁ NHÂN</h1>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label>Họ Và Tên</label>
+                                <input type="text" class="form-control" id="ho__ten">
+                            </div>
+                            <div class="form-group">
+                                <label>Tổng Thu nhập</label>
+                                <input type="number" class="form-control" id="tong__thu__nhap">
+                            </div>
+                            <div class="form-group">
+                                <label>Số người phụ thuộc</label>
+                                <input type="number" class="form-control" id="so__nguoi__pt">
+                            </div>
+                            
+                            <button type="submit" class="btn btn-success" onclick="tinhThue(event)">Tính Thuế</button>
+                        </form>
+                    </div>
+                    <div class="card-footer" id="footer__ttn">
+                        
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- TÍNH TIỀN ĐIỆN -->
+
+        <div class="container">
+            <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h1 class="text-center">TÍNH TIỀN ĐIỆN</h1>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label>Họ Và Tên</label>
+                                <input type="text" class="form-control" id="ho__ten">
+                            </div>
+                            <div class="form-group">
+                                <label>Số điện tiêu thụ (Kw)</label>
+                                <input type="number" class="form-control" id="so__dien">
+                            </div>
+                            <button type="submit" class="btn btn-success" onclick="tinhTienDien(event)">Tính Tiền Điện</button>
+                        </form>
+                    </div>
+                    <div class="card-footer" id="footer__tiendien">
+                        
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <hr>
 
 
 
@@ -72,5 +138,7 @@
 
 
     <script src="./quanLyTuyenSinh.js"></script>
+    <script src="./tinhThueThuNhap.js"></script>
+    <script src="./tinhTienDien.js"></script>
   </body>
 </html>

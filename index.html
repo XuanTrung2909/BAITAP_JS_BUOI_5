@@ -121,6 +121,44 @@
         </div>
         <hr>
 
+        <!-- TÍNH TIỀN CÁP -->
+
+        <div class="container">
+            <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h1 class="text-center">TÍNH TIỀN CÁP</h1>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label>Số Tài Khoản</label>
+                                <input type="text" class="form-control" id="stk">
+                            </div>
+                            <div class="form-group">
+                                <label>Mã khách hàng</label>
+                                <input type="number" class="form-control" id="mkh">
+                            </div>
+                            <div class="form-group">
+                                <label>Số đầu kết nối</label>
+                                <input type="number" class="form-control" id="so__ket__noi" placeholder="chỉ doanh nghệp mới nhập">
+                            </div>
+                            <div class="form-group">
+                                <label>Số Kênh cao cấp</label>
+                                <input type="number" class="form-control" id="kenh">
+                            </div>
+                            <button type="submit" class="btn btn-success" onclick="tinhTienCap(event)">Tính Tiền Cáp</button>
+                        </form>
+                    </div>
+                    <div class="card-footer" id="footer__tiencap">
+                        
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <hr>
 
 
 
@@ -140,5 +178,6 @@
     <script src="./quanLyTuyenSinh.js"></script>
     <script src="./tinhThueThuNhap.js"></script>
     <script src="./tinhTienDien.js"></script>
+    <script src="./tinhTienCap.js"></script>
   </body>
 </html>

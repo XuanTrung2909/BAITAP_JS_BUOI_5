@@ -22,7 +22,7 @@ function  tinhDiem(event){
     var checkDoiTuong = xuLyDoiTuongUuTien(doiTuong);
     checkDoiTuong = parseFloat(checkDoiTuong);
 
-    var tongDiem = tinhTongDiem(mon1, mon2, mon3, checkKhuVuc, checkDoiTuong);
+    var tongDiem = mon1 + mon2 + mon3 + checkKhuVuc + checkDoiTuong
 
     // In Dữ liêu
 
@@ -68,10 +68,4 @@ function xuLyDoiTuongUuTien(b){
             break;
     }
     return diemDoiTuong;
-}
-
-
-function tinhTongDiem(a, b, c, d, e){
-    var tong = (a + b + c + d + e);  
-    return tong;
 }

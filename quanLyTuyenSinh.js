@@ -4,6 +4,7 @@ function  tinhDiem(event){
 
     // Nhập dữ liệu 
 
+    var diemChuan = document.getElementById("diem__chuan").value;
     var mon1 = document.getElementById("mon1").value;
     var mon2 = document.getElementById("mon2").value;
     var mon3 = document.getElementById("mon3").value;
@@ -22,11 +23,19 @@ function  tinhDiem(event){
     var checkDoiTuong = xuLyDoiTuongUuTien(doiTuong);
     checkDoiTuong = parseFloat(checkDoiTuong);
 
-    var tongDiem = mon1 + mon2 + mon3 + checkKhuVuc + checkDoiTuong
+    var tongDiem = mon1 + mon2 + mon3 + checkKhuVuc + checkDoiTuong;
+
 
     // In Dữ liêu
 
-    document.getElementById("footer__qlts").innerHTML = "Tổng điểm là: " + tongDiem;
+    if(tongDiem >= diemChuan){
+        document.getElementById("footer__qlts").innerHTML = "Tổng điểm là: " + tongDiem + "  (Đậu)";
+    }else{
+        document.getElementById("footer__qlts").innerHTML = "Tổng điểm là: " + tongDiem + "  (Rớt)";
+    }
+
+    
+
 
     
     
